@@ -1,20 +1,17 @@
 <?php
 
-// DB connection settings come from environment variables (Azure App
-// Service Application Settings locally / .env when run outside App
-// Service), so the app can be pointed at any MySQL server without
-// editing code. Defaults match the previous hardcoded values for
-// host/port/user/db names, matching the i-CHARM/mrin_online pattern.
-//
-// No fallback for the password: falling back to a hardcoded value here
-// is exactly how a real secret ends up committed to git history in the
-// first place. Fail loudly instead of silently connecting with a
-// stale/leaked credential.
-define("DB_HOST", getenv('DB_HOST') ?: '172.18.4.11');
-define("DB_PORT", getenv('DB_PORT') ?: '3306');
-define("DB_USER", getenv('DB_USER') ?: 'root');
-define("DB_NAME1", getenv('DB_NAME1') ?: 'ingress_group');
-define("DB_NAME2", getenv('DB_NAME2') ?: 'iqms');
+// DB connection settings come entirely from environment variables (Azure
+// App Service Application Settings), so the app can be pointed at any
+// MySQL server without editing code. No fallback on any of these,
+// including host/port/user/db names: falling back to a hardcoded value
+// here is exactly how a real secret ends up committed to git history in
+// the first place. All must be set as App Service Application Settings —
+// see .env.example for the variable names.
+define("DB_HOST", getenv('DB_HOST'));
+define("DB_PORT", getenv('DB_PORT'));
+define("DB_USER", getenv('DB_USER'));
+define("DB_NAME1", getenv('DB_NAME1'));
+define("DB_NAME2", getenv('DB_NAME2'));
 
 $db_password = getenv('DB_PASSWORD');
 if ($db_password === false || $db_password === '') {
