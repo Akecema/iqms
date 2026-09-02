@@ -1,0 +1,29 @@
+.fg-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 8px 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+}
+
+.fg-item {
+    padding: 14px 0;
+    border-bottom: 1px dashed #e6e6e6;
+}
+
+.fg-item.no-border {
+    border-bottom: none;
+}
+
+.fg-label {
+    font-size: 12px;
+    color: #8a8f98;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.fg-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1f2937;
+}

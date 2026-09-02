@@ -1,0 +1,5 @@
+.dataTables_filter input {
+    width: 200px !important; /* or any size you want */
+    height: 16px;             /* optional */
+    font-size: 12px;          /* optional */
+}

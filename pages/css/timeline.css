@@ -1,0 +1,133 @@
+.timeline-card {
+    background: #F7FBF9;
+    border : 1px solid #dad8d4;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Item */
+.timeline-item {
+    position: relative;
+    display: flex;
+    gap: 14px;
+    padding-left: 44px;
+    margin-bottom: 22px;
+}
+
+/* Vertical line */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 0;
+    bottom: -22px;
+    width: 2px;
+    background: #c9c9d8;
+}
+
+/* Remove line from last */
+.timeline-item:last-child::before {
+    display: none;
+}
+
+/* Icon */
+.timeline-icon {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #DEE5E0;
+    color: #6C757D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+/* Text */
+.timeline-title {
+    font-weight: 600;
+    color: #1B4332;
+}
+
+.timeline-date {
+    font-size: 11px;
+    color: #6C757D;
+}
+
+/* DONE */
+.timeline-item.done .timeline-icon {
+    background: #292a2aff;
+    color: #fff;
+}
+
+/* ACTIVE */
+.timeline-item.active {
+    /* background: #ebe6f4; */
+    border-radius: 10px;
+    padding: 10px 12px 10px 44px;
+}
+
+.timeline-item.active .timeline-icon {
+    background: #292a2aff;
+    color: #fff;
+}
+
+/* ERROR */
+.timeline-item.error .timeline-icon {
+    background: #DC3545;
+    color: #fff;
+}
+
+.timeline-entry {
+    position: relative;
+    padding-left: 42px;
+}
+
+/* icon base */
+.timeline-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #DEE5E0;
+    color: #6C757D;
+}
+
+/* DONE */
+.timeline-entry.done .timeline-icon {
+    background: #292a2aff;
+    color: #fff;
+}
+
+/* ACTIVE */
+.timeline-entry.active {
+    background: #E6F4EA;
+    border-radius: 10px;
+    padding: 10px 12px 10px 42px;
+}
+.timeline-entry.active .timeline-icon {
+    background: #292a2aff;
+    color: #fff;
+}
+
+/* ERROR */
+.timeline-entry.error .timeline-icon {
+    background: #DC3545;
+    color: #fff;
+}
+
+/* SKIPPED step */
+.timeline-item.skipped .timeline-icon {
+    background: #E9ECEF;
+    color: #ADB5BD;
+}
+
+.timeline-item.skipped .timeline-title {
+    color: #ADB5BD;
+}
+
+.timeline-item.skipped .timeline-date {
+    color: #CED4DA;
+}

@@ -1,0 +1,91 @@
+/* Timeline container */
+.timeline-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 10px;
+    gap: 30px;
+}
+
+/* Horizontal line */
+.timeline-card::before {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 30px;
+    right: 30px;
+    height: 3px;
+    background: #d6dbe1;
+    z-index: 0;
+}
+
+/* Each item */
+.timeline-item {
+    position: relative;
+    text-align: center;
+    flex: 1;
+    z-index: 1;
+}
+
+/* Icon */
+.timeline-icon {
+    width: 44px;
+    height: 44px;
+    background: #e9ecef;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Active / completed states */
+.timeline-item.active .timeline-icon,
+.timeline-item.completed .timeline-icon {
+    background: #198754;
+    color: #fff;
+}
+
+/* Title */
+.timeline-title {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Date text */
+.timeline-date {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 4px;
+}
+
+/* Cancel / return colors */
+.timeline-item.cancelled .timeline-icon {
+    background: #dc3545;
+    color: #fff;
+}
+
+.timeline-item.returned .timeline-icon {
+    background: #fd7e14;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .timeline-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-card::before {
+        display: none;
+    }
+
+    .timeline-item {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 12px;
+    }
+}

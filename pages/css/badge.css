@@ -1,0 +1,173 @@
+.badge-beige {
+    background-color: #afa56e;
+    border-color: #b4ab7c;
+    color: #fff;
+}
+
+.badge-kuning {
+    background-color: #756a34;
+    border-color: #6DAD58;
+    color: #fff;
+}
+
+.badge-emerald {
+    background-color: #3d5b4f;
+    border-color: #487653;
+    color: #fff;
+}
+
+.badge-sephire {
+    background-color: #694b3d;
+    border-color: #452c21;
+    color: #fff;
+}
+
+.badge-meron {
+    background-color: #621113;
+    border-color: #64412b;
+    color: #fff;
+}
+
+.badge-oyen {
+    background-color: #7b3311;
+    border-color: #b14a1a;
+    color: #fff;
+}
+
+.badge-bangtan {
+    background-color: #c5ac6e;
+    border-color: rgb(208, 169, 72);
+    color: #fff;
+}
+
+.badge-sephora {
+    background-color: #D48437;
+    border-color: #ce843f;
+    color: #fff;
+}
+
+.badge-brown {
+    background-color: #e8bf95;
+    border-color: #817d79;
+    color: #fff;
+}
+
+.badge-oyenrange {
+    background-color: #ab6422;
+    border-color: #914e0f;
+    color: #fff;
+}
+
+.badge-jinggo {
+    background-color: #b6b00aff;
+    border-color: #b6b00aff;
+    color: #fff;
+}
+
+.badge-black {
+    background-color: #747574;
+    border-color: #747574;
+    color: #fff;
+}
+
+/* badge outline */
+.badge-outline-hijau {
+    border-color: #085209;
+    color: #085209;
+    font-weight: 500;
+}
+
+.badge-outline-beige {
+    border-color: #81742a;
+    color: #81742a;
+    font-weight: 500;
+}
+
+.badge-outline-kuning {
+    border-color: #b7b107;
+    color: #b7b107;
+    font-weight: 500;
+}
+
+.badge-outline-emerald {
+    border-color: #53AD3D;
+    color: #53AD3D;
+    font-weight: 500;
+}
+
+.badge-outline-sephire {
+    border-color: #694b3d;
+    color: #694b3d;
+    font-weight: 500;
+}
+
+.badge-outline-meron {
+    border-color: #621113;
+    color: #621113;
+    font-weight: 500;
+}
+
+.badge-outline-oyen {
+    border-color: #7b3311;
+    color: #7b3311;
+    font-weight: 500;
+}
+
+.badge-outline-bangtan {
+    border-color: #b98d1e;
+    color: #b98d1e;
+    font-weight: 500;
+}
+
+.badge-outline-sephora {
+    border-color: #D48437;
+    color: #D48437;
+    font-weight: 500;
+}
+
+.badge-outline-brown {
+    border-color: #72605b;
+    color: #72605b;
+    font-weight: 500;
+}
+
+.badge-outline-pink {
+    border-color: #f75495;
+    color: #f75495;
+    font-weight: 500;
+}
+
+
+.badge-outline-oyenrange {
+    border-color: #ab6422;
+    color: #ab6422;
+    font-weight: 500;
+}
+
+.badge-dark:hover {
+    background-color: #525050ff;
+}
+
+.shift-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+/* Day */
+.shift-badge.day {
+    background: #E6F4EA;
+    color: #198754;
+    border: 1px solid #198754;
+}
+
+/* Night */
+.shift-badge.night {
+    background: #1B4332;
+    color: #E6F4EA;
+}

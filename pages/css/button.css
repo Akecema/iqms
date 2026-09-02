@@ -1,0 +1,220 @@
+/* Floating button back  */
+.back-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    background-color: #1d1e1eff;
+    color: white;
+}
+.back-button:hover {
+    background-color: #5b5e5dff;
+    border-color: #5b5e5dff;
+    color: white;
+}
+
+#btnUpdate, #btnSubmit {
+    position: relative;
+    z-index: 1000 !important;
+}
+
+/* Outline buttons for uploads */
+.btn-outline-success, .btn-outline-primary {
+    border-width: 1px;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #34914a;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #34914a;
+}
+
+.btn-meron
+{
+    background-color: #621113;
+    border-color: #621113;
+    color: white;
+}
+
+.btn-brown
+{
+    background-color: #72605b;
+    border-color: #72605b;
+    color: white;
+}
+
+.btn-brown:hover
+{
+    background-color: #72605b;
+    border-color: #72605b;
+    color: white;
+}
+
+.btn-lime
+{
+    background-color: #786D2F;
+    border-color: #786D2F;
+    color: white;
+}
+.btn-lime:hover
+{
+    background-color: #938745;
+    border-color: #938745;
+    color: white;
+}
+
+.btn-darklime
+{
+    background-color: #423B0C;
+    border-color: #423B0C;
+    color: white;
+}
+
+.btn-darklime:hover
+{
+    background-color: #5d5426;
+    border-color: #5d5426;
+    color: white;
+}
+
+.btn-darklime-2
+{
+    background-color: #b3a33d;
+    border-color: #b3a33d;
+    color: white;
+}
+.btn-darklime-2:hover
+{
+    background-color: #b1a555;
+    border-color: #b1a555;
+    color: white;
+}
+
+/* button delete image */
+.remove-old {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #181818;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    border: 2px solid #fff; /* optional: white border for visibility */
+    transition: background 0.2s, color 0.2s;
+}
+
+.remove-old:hover {
+    background: #B31236;
+    color: #fff;
+    border-color: #FAF7F9;
+}
+
+.remove-new {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #181818;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    border: 2px solid #fff; /* optional: white border for visibility */
+    transition: background 0.2s, color 0.2s;
+}
+
+.remove-new:hover {
+    background: #B31236;
+    color: #fff;
+    border-color: #FAF7F9;
+}
+
+.remove-old-ok {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #181818;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    border: 2px solid #fff; /* optional: white border for visibility */
+    transition: background 0.2s, color 0.2s;
+}
+
+.remove-old-ok:hover {
+    background: #B31236;
+    color: #fff;
+    border-color: #FAF7F9;
+}
+
+.remove-new-ok {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #181818;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    border: 2px solid #fff; /* optional: white border for visibility */
+    transition: background 0.2s, color 0.2s;
+}
+
+.remove-new-ok:hover {
+    background: #B31236;
+    color: #fff;
+    border-color: #FAF7F9;
+}
+
+/* Checkbox */
+/* Default (unchecked) */
+.row-check, .form-check-input {
+    appearance: auto !important;
+    -webkit-appearance: checkbox !important;
+    accent-color: #DEDAD9;
+}
+
+/* Optional: different color on hover/focus */
+.row-check:hover {
+    cursor: pointer;
+    accent-color: #a6a4a3;
+}

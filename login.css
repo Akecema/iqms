@@ -1,0 +1,142 @@
+:root {
+    --brand-green: #085209;
+    --light-bg: #f8fafc;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: var(--light-bg);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Left Side: Login Form */
+.login-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: white;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* .brand-logo {
+    color: var(--brand-green);
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    background: url('i-QIMS.png');
+} */
+
+.brand-logo {
+    width: 180px;
+    height: 180px;
+
+    background: url("logo_1.png") center / contain no-repeat;
+
+    display: block;
+    margin: 0 auto 10px;
+    /* only 10px space below */
+
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+p.subtitle {
+    color: #64748b;
+    margin-bottom: 32px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--brand-green);
+    box-shadow: 0 0 0 3px rgba(8, 82, 9, 0.1);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--brand-green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity 0.2s;
+}
+
+.login-btn:hover {
+    opacity: 0.9;
+}
+
+/* Right Side: Image Background */
+.image-section {
+    flex: 1.2;
+    background: linear-gradient(rgba(8, 82, 9, 0.2), rgba(8, 82, 9, 0.4)),
+        url('pages/images/image-showing-a-sophisticated-AI-driven-visual-inspection-system-in-a-manufacturing-setting.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+}
+
+.image-overlay-text {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 80%;
+}
+
+/* Responsive design for tablets/phones */
+@media (max-width: 900px) {
+    .image-section {
+        display: none;
+    }
+}

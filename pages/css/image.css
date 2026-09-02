@@ -1,0 +1,12 @@
+#lightgallery img {
+    width: 100%;              /* fills its column */
+    height: 200px;            /* fixed height thumbnail */
+    object-fit: cover;        /* fill box, crop if needed */
+    border-radius: 6px;       /* optional rounded corners */
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+#lightgallery a {
+    padding: 5px;         /* internal spacing around image */
+}
