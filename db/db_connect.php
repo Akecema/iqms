@@ -1,5 +1,18 @@
 <?php
 
+// Refuse direct HTTP access. This file is meant to be include()'d by
+// another script (SCRIPT_FILENAME will be that script, not this one) -
+// requesting it directly by URL would run these mysqli_connect() calls
+// with no auth check and no caller. This is a PHP-level guard rather than
+// a web-server rule because Azure App Service's PHP 8.3 Linux stack fronts
+// with Nginx, not Apache - .htaccess (an Apache-only mechanism) is a no-op
+// here, confirmed live: db/db_connect.php returned a blank 200 before this
+// fix. A PHP-level check works regardless of which web server is in front.
+if (realpath($_SERVER['SCRIPT_FILENAME']) === __FILE__) {
+    http_response_code(403);
+    exit('Direct access forbidden.');
+}
+
 // DB connection settings come entirely from environment variables (Azure
 // App Service Application Settings), so the app can be pointed at any
 // MySQL server without editing code. No fallback on any of these,
